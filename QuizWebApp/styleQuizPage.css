@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100..900&display=swap');
+
+:root {
+  --primary-color: #75B1BC;
+  --secondary-color: #EAE0C8;
+  --accent-color: #232fb2;
+  --text-color: #313338;
+  --white: #FFFFFF;
+  --black: #020202;
+  --hover-effect: #313dc3;
+  --button-color: #0E88C4;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  background-color: var(--secondary-color);
+}
+
+.bg-available {
+  position: absolute;
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centrira v sredata */
+  background-color: var(--primary-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  max-width: 28rem;
+  width: 80%;
+  border: 1px solid var(--black);
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+ul {
+  border: 1px solid var(--black);
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  list-style: none;
+}
+
+li {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--black);
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+button {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--button-color);
+  color: var(--white);
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin:0.5rem;
+}
+
+button:hover {
+  background-color: var(--hover-effect);
+}
+
+button:active {
+  background-color: var(--accent-color);
+}
+
+
+.quiz-option {
+  display: block;
+  padding: 0.75rem;
+  margin: 0.75rem 0;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+  }
+  .quiz-option {
+    font-size: 0.9rem;
+  }
+  button {
+    font-size: 0.9rem;
+    padding: 0.35rem 0.75rem;
+  }
+}

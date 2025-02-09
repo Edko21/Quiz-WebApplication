@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Login Page</title>
+</head>
+<body>
+  <section class="background">
+    <img src="images/seamless-pattern-question-marks-quiz-background-vector-29564902-372236059.jpg" alt="background">
+  </section>
+  <main class="main-container">
+    <section class="left-section">
+      <p id="errors"></p>
+      <h1 class="main-section-heading">Welcome back!</h1>
+      <h3 class="main-section-subheading">Please enter your email address and password.</h3>
+      <main class="step-content">
+        <form id="form" class="step-form">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" placeholder="Enter your email"/>
+
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Enter your password"/>
+          <button type="submit" class="login-btn">Log In</button>
+        </form>
+        <p class="register-link">Don't have an account? <a href="signup.html">Register!</a></p>
+      </main>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

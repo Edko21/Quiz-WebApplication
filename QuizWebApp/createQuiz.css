@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100..900&display=swap');
+
+:root {
+  --primary-color: #75B1BC;
+  --secondary-color: #EAE0C8;
+  --accent-color: #232fb2;
+  --text-color: #313338;
+  --white: #FFFFFF;
+  --black: #020202;
+  --hover-effect: #313dc3;
+  --button-color: #0E88C4;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--secondary-color);      
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;            
+}
+
+.background-quiz {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-quiz img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  max-width: 40rem;
+  width: 100%;
+  border: 1px solid var(--black);
+  position: relative;
+}
+
+h1, h2 {
+  font-size: 1.8rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+input[type="text"], textarea, select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--text-color);
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-color);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+button {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--button-color);
+  color: var(--white);
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: var(--hover-effect);
+}
+
+button:active {
+  background-color: var(--accent-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+li {
+  background-color: var(--secondary-color);
+  padding: 0.75rem;
+  border: 1px solid var(--text-color);
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+label {
+  font-size: 1rem;
+  color: var(--text-color);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.correct-answer {
+  margin-right: 0.5rem;
+}
+
+#answers-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.answer {
+  width: 48%;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem;
+  }
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+  input[type="text"], textarea {
+    font-size: 0.9rem;
+  }
+  button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
