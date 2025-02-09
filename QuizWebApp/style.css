@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100..900&display=swap');
+
+:root {
+    --primary-color: #75B1BC;
+    --secondary-color: #EAE0C8;
+    --accent-color: #232fb2;
+    --text-color: #313338;
+    --white: #FFFFFF;
+    --black: #020202;
+    --hover-effect: #313dc3;
+    --button-color: #0E88C4;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    background-color: var(--secondary-color);
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.background img {
+    width: 105%;
+    height: 100%;
+    object-fit: cover;
+}   
+
+.main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: var(--primary-color);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    max-width: 28rem;
+    width: 100%;
+    border: 1px solid var(--black);
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.step-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.step-form label {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.step-form input {
+    padding: 0.75rem;
+    border: 2px solid var(--text-color);
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.step-form input::placeholder {
+    color: var(--text-color);
+}
+
+.step-form input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+button {
+    border-radius: 10px;
+    padding: 0.8rem;
+    background-color: var(--button-color);
+    color: var(--white);
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--hover-effect);
+}
+
+button:active {
+    background-color: var(--accent-color);
+}
+
+.register-link {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--text-color);
+}

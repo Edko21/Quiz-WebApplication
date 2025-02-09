@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="createQuiz.css" />
+    <script defer src="script.js"></script>
+    <title>Create and Manage Quizzes</title>
+  </head>
+  <body>
+    <section class="background-quiz">
+      <img src="images/background-quizjpg.jpg" alt="background">
+    </section>
+    <div class="container">
+      <div>
+        <h1>Create a New Quiz</h1>
+        <input type="text" id="quiz-name" placeholder="Enter quiz name..." />
+        <button id="create-quiz-btn">Create Quiz</button>
+      </div>
+      <div>
+        <h2>Your Quizzes</h2>
+        <ul id="user-quizzes-list"></ul>
+      </div>
+      <div>
+        <h2>Add/Edit Questions</h2>
+        <label for="question-type">Question Type:</label>
+        <select id="question-type">
+          <option value="single">Standard Question (Single Correct Answer)</option>
+          <option value="multiple">Multiple Correct Answers</option>
+          <option value="truefalse">True/False</option>
+        </select>
+        <textarea id="question-text" placeholder="Enter your question..."></textarea>
+        <div id="answers-container">
+          <input type="text" placeholder="Option 1" class="answer" />
+          <input type="text" placeholder="Option 2" class="answer" />
+          <input type="text" placeholder="Option 3" class="answer" />
+          <input type="text" placeholder="Option 4" class="answer" />
+        </div>
+        <div>
+          <label>Correct Answers:</label>
+          <input type="checkbox" value="1" class="correct-answer" /> Option 1
+          <input type="checkbox" value="2" class="correct-answer" /> Option 2
+          <input type="checkbox" value="3" class="correct-answer" /> Option 3
+          <input type="checkbox" value="4" class="correct-answer" /> Option 4
+        </div>
+        <button id="add-question-button">Add Question</button>
+      </div>
+      <div>
+        <h2>Questions in <span id="current-quiz-name"></span></h2>
+        <ul id="question-list"></ul>
+        <button id="return-to-avaliable">Return to Avaliable Quizes</button>
+      </div>
+    </div>
+  </body>
+</html>
