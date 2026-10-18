@@ -36,7 +36,7 @@
 
 ---
 
-## 🛠️ Tech Stack & Concepts
+##Tech Stack & Concepts
 
 | Category | Details |
 |---|---|
